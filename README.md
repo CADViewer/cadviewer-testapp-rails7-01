@@ -7,7 +7,7 @@ Either install directly under Rails on your environment, or create your own cont
 
 ## This package contains
 
-1: CADViewer script library  - installed under ***/public/app/***  (omit /cadviewer/). 
+1: [CADViewer script library](https://github.com/CADViewer/cadviewer-script-library)  - installed under ***/public/app/***  (omit /cadviewer/). 
 
 2: A sample HTML implementation of CADViewer in a Rails7 controller, see the content of ***/app/views/cadviewerbasecanvas/index.html.erb***.
 
