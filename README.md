@@ -1,24 +1,79 @@
-# README
+# cadviewer-testapp-rails7-01
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Use this to test setting up CADViewer under Rails7  
 
-Things you may want to cover:
+Either install directly under Rails on your environment, or create your own controller. 
 
-* Ruby version
 
-* System dependencies
+## This package contains
 
-* Configuration
+1: CADViewer script library  - under /public/app/ 
 
-* Database creation
+2: A sample HTML implementation of CADViewer in a Rails7 controller, see the content of /app/views/cadviewerbasecanvas/index.html.erb
 
-* Database initialization
 
-* How to run the test suite
+## This package does not contains
 
-* Services (job queues, cache servers, search engines, etc.)
+5: The back-end AutoXchange 2022 conversion server and connecting scripts. Install these separately!
 
-* Deployment instructions
+**NOTE:** With this download, use the NodeJS CAD conversion server: 
 
-* ...
+
+## How to Use
+
+Once the 5: script handler is installed, the HTML samples under /cadviewer/html/ can be run from a web-browser. Use http://localhost/cadviewer/html/CADViewer_fileloader_670.html as a starting point (assuming that your have installed under http://localhost).
+
+
+
+
+## Documentation 
+
+-   [CADViewer Techdocs and Installation Guide](https://cadviewer.com/cadviewertechdocs/download)
+
+
+
+## How To Install CADViewer Handlers
+
+Please refer to the general Documentation above, for the back-end handlers, there is more information on:  
+
+
+- [NodeJS](https://cadviewer.com/cadviewertechdocs/handlers/nodejs/)
+- [PHP](https://cadviewer.com/cadviewertechdocs/handlers/php/)
+- [.NET](https://cadviewer.com/cadviewertechdocs/handlers/asp.net/)
+- [Servlets](https://cadviewer.com/cadviewertechdocs/handlers/servlets/)
+- [Angular](https://cadviewer.com/cadviewertechdocs/handlers/angular/)
+- [ReactJS](https://cadviewer.com/cadviewertechdocs/handlers/reactjs/)
+- [VueJS](https://cadviewer.com/cadviewertechdocs/handlers/vuejs/)
+
+
+## Updating CAD Converters
+
+This repository should contain the latest converters, but in case you need to update any of the back-end converters please follow: 
+
+* [Download **AutoXchange**](/download/) (and other converters), install (unzip) AX2022 in **cadviewer/converters/ax2022/windows** or **cadviewer/converters/ax2022/linux** or in the designated folder structure.
+* Read the sections on installing and handling [Fonts](https://tailormade.com/ax2020techdocs/installation/fonts/) in [AutoXchange 2022 TechDocs](https://tailormade.com/ax2020techdocs/) and [TroubleShooting](https://tailormade.com/ax2020techdocs/troubleshooting/).
+
+* Try out the samples and build your own application!
+ 
+ 
+
+ 
+ ## Troubleshooting
+
+One issue that often appears in installations is that interface icons do not display properly:
+
+![Icons](https://cadviewer.com/cadviewertechdocs/images/missing_icons.png "Icons missing")
+
+Typically the variables *ServerUrl*, *ServerLocation* or *ServerBackEndUrl* in the controlling **HTML**  document in ***/cadviewer/html/*** are not set to reflect the front-end server url or port.
+
+<pre style="line-height: 110%">
+
+
+    var ServerBackEndUrl = "";  // or what is appropriate for my server; used for NodeJS server only
+    var ServerUrl = "http://localhost/cadviewer/";   // or what is appropriate for my server
+    var ServerLocation = ""; // or what is appropriate for my server
+</pre>
+ 
+ 
+ 
+**Have Fun!**  - and get in [touch](mailto:developer@tailormade.com)  with us!
