@@ -7,22 +7,23 @@ Either install directly under Rails on your environment, or create your own cont
 
 ## This package contains
 
-1: CADViewer script library  - under /public/app/ 
+1: CADViewer script library  - installed under ***/public/app/***  (omit /cadviewer/). 
 
-2: A sample HTML implementation of CADViewer in a Rails7 controller, see the content of /app/views/cadviewerbasecanvas/index.html.erb
+2: A sample HTML implementation of CADViewer in a Rails7 controller, see the content of ***/app/views/cadviewerbasecanvas/index.html.erb***.
 
 
 ## This package does not contains
 
 5: The back-end AutoXchange 2022 conversion server and connecting scripts. Install these separately!
 
-**NOTE:** With this download, use the NodeJS CAD conversion server: 
+**NOTE:** With this download, use the NodeJS CAD conversion server: https://github.com/CADViewer/cadviewer-conversion-server
 
 
 ## How to Use
 
-Once the 5: script handler is installed, the HTML samples under /cadviewer/html/ can be run from a web-browser. Use http://localhost/cadviewer/html/CADViewer_fileloader_670.html as a starting point (assuming that your have installed under http://localhost).
+Run Rails7 server under http://localhost:3000,  in [CAD Conversion Server](https://github.com/CADViewer/cadviewer-conversion-server), ensure the server is running on port 4000. 
 
+Use the content of ***/app/views/cadviewerbasecanvas/index.html.erb*** as a starting point of an integration.
 
 
 
