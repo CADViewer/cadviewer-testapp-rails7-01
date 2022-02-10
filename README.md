@@ -21,7 +21,7 @@ Either install directly under Rails on your environment, or create your own cont
 
 ## How to Use
 
-Run Rails7 server under http://localhost:3000,  in [CAD Conversion Server](https://github.com/CADViewer/cadviewer-conversion-server), ensure the server is running on port 4000. 
+Run Rails7 server under http://localhost:3000. In [CAD Conversion Server](https://github.com/CADViewer/cadviewer-conversion-server), ensure the server is running on port 4000. 
 
 Use the content of ***/app/views/cadviewerbasecanvas/index.html.erb*** as a starting point of an integration.
 
