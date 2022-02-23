@@ -68,6 +68,7 @@
 	var FileName = ServerUrl + "/content/drawings/dwg/Asbestos_drawing_01.dwg";		
 	var FileName = ServerBackEndUrl + "/content/drawings/dwg/measure_template.dwg";		
 
+
     var folderPath = "/content/drawings/dwg/";
 
 	$(document).ready(function()
@@ -100,10 +101,10 @@
 
 
         // NOTE BELOW: THESE SETTINGS ARE FOR SERVER CONTROLS FOR UPLOAD OF REDLINES, FILES, SPACE OBJECTS
-		cvjs_setServerFileLocation_AbsolutePaths(ServerLocation+folderPath, ServerUrl+folderPath,"","");
-		cvjs_setRedlinesAbsolutePath(ServerUrl+'/content/redlines/fileloader_610/', ServerLocation+'/content/redlines/fileloader_610/');
-		cvjs_setSpaceObjectsAbsolutePath(ServerUrl+'/content/spaceObjects/', ServerLocation+'/content/spaceObjects/');
-		cvjs_setInsertImageObjectsAbsolutePath(ServerUrl+'/content/inserted_image_objects/', ServerLocation+'/content/inserted_image_objects/')
+		cvjs_setServerFileLocation_AbsolutePaths(ServerLocation+folderPath, ServerBackEndUrl+folderPath,"","");
+		cvjs_setRedlinesAbsolutePath(ServerBackEndUrl+'/content/redlines/fileloader_610/', ServerLocation+'/content/redlines/fileloader_610/');
+		cvjs_setSpaceObjectsAbsolutePath(ServerBackEndUrl+'/content/spaceObjects/', ServerLocation+'/content/spaceObjects/');
+		cvjs_setInsertImageObjectsAbsolutePath(ServerBackEndUrl+'/content/inserted_image_objects/', ServerLocation+'/content/inserted_image_objects/')
 		// NOTE ABOVE: THESE SETTINGS ARE FOR SERVER CONTROLS OF SPACE OBJECTS, ETC
 
 
